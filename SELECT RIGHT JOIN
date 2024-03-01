@@ -1,0 +1,3 @@
+SELECT * FROM Driving_License 
+Right JOIN Cadet 
+ON Driving_License.id_Cadet = Cadet.id_Cadet
