@@ -1,0 +1,3 @@
+UPDATE Request_Gosuslugi
+SET verified_acc = '-'
+WHERE id_Cadet IN (SELECT id_Cadet FROM Cadet WHERE cheque_stateduty = 12345)
