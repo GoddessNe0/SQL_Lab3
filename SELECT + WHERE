@@ -1,0 +1,5 @@
+SELECT * FROM Cadet
+SELECT * FROM Request_Gosuslugi
+SELECT passport
+FROM Cadet
+WHERE id_Cadet IN (SELECT id_Cadet FROM Request_Gosuslugi WHERE verified_acc = '+')
